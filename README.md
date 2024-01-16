@@ -1,3 +1,13 @@
 # PlaneGame
 #### Video Demo:  <https://youtu.be/AXnYCZr_t9A>
-#### Description:This is a simple little game I made using python with the help of the pygame library. In the game, you play a plane with three lives and need to use the ↑↓←→ keys to avoid the collision of enemy planes or the bullets they fire. There are two types of enemy aircraft, red and purple. The red ones do not fire bullets and the purple ones do. No matter which enemy aircraft hits their body, their health will be deducted. In order to avoid continuous deduction of health after the aircraft encounters an enemy plane, I set up the invincibility time when deducting blood to avoid continuous damage calculation. After running the code, you will see an interface called menu. Click start to enter the game and click quit to exit the game. After the aircraft's health value returns to zero, the Game over interface will pop up. Click the menu button to return to the menu interface.
+#### Description:My project is a 2D shooter written in Python and the Pygame library. In this game, players need to control a plane, dodge enemy attacks, and survive as long as possible.
+
+My game contains the following features
+
+Player Controls: Players can use the direction keys to control the movement of the aircraft. The plane cannot fly off screen
+
+Enemies: There are two types of enemies in the game, one is a red ordinary enemy, and the other is a purple enemy called "benermy", which can shoot bullets. The total number of all enemies is fixed at 5, but the flying speed of each enemy aircraft is random within a range, and will be refreshed above after flying out of the screen.
+
+Collision Detection: The game detects if the aircraft collides with enemies or bullets. If the aircraft hits an enemy or a bullet, the aircraft's health will be reduced. At the same time, in order to prevent continuous damage after encountering the enemy aircraft, I added an invincibility time effect. The invincibility time was activated at the moment of encountering the enemy aircraft and lasted for about two seconds to avoid continuous collision determination.
+
+Game state: The game has three states, namely "menu", "playing" and "game_over". Players can click "start" in the menu to start the game and "quit" to exit the game. They can also click "menu" after the "Game over" pops up after the aircraft's health value returns to zero to return to the menu interface.
